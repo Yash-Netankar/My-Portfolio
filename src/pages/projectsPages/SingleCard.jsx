@@ -16,9 +16,9 @@ const SingleCard = ({ img, title, desc, link, git, hosted }) => {
             </p>
             <div className="btns_div">
                 {
-                    hosted ? <a href={link} target="_blank"><button>Site</button></a> : ""
+                    hosted ? <a href={link} target="_blank" rel="noreferrer"><button>Site</button></a> : ""
                 }
-                <a href={git} target="_blank"><button>Code</button></a>
+                <a href={git} target="_blank" rel="noreferrer"><button>Code</button></a>
             </div>
         </div>
     )
