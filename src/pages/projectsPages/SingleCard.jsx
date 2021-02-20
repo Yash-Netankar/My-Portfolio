@@ -5,7 +5,7 @@ const SingleCard = ({ img, title, desc, link, git, hosted }) => {
     return (
         <div className="single_card">
             <div className="img_div">
-                <img src={process.env.PUBLIC_URL + img} alt="Project_Image" />
+                <img src={process.env.PUBLIC_URL + img} alt="Project" />
             </div>
             <h1 className="title">{title}</h1>
             <p className="desc">

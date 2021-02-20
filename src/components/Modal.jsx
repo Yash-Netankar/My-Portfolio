@@ -15,7 +15,8 @@ const Modal = (props) => {
             </header>
             <main className="modal-content">
                 {
-                    props.img_arr.map((item, index) => <img src={item} alt="Work Photo" key={index} />)
+                    props.img_arr.map((item, index) => <img src={item}
+                        alt={index} key={index} />)
                 }
             </main>
         </div>
