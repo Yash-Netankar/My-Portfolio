@@ -10,13 +10,13 @@ const Footer = () => {
                     <h1>Contact Me:</h1>
                     <div className="contacts_div">
                         <a href="mailto:netankaryash2002@gmail.com"
-                            title="netankaryash2002@gmail.com" target="_top">
+                            title="netankaryash2002@gmail.com">
                             <i class='fas fa-envelope'></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/yash-netankar-29b8ba200/" target="_blank" >
+                        <a href="https://www.linkedin.com/in/yash-netankar-29b8ba200/" target="_blank" rel="noreferrer">
                             <i class='fab fa-linkedin'></i>
                         </a>
-                        <a href="https://github.com/yash-netankar/" target="_blank" >
+                        <a href="https://github.com/yash-netankar/" target="_blank" rel="noreferrer">
                             <i class='fab fa-github'></i>
                         </a>
                         <a href="tel:9284954495" >
