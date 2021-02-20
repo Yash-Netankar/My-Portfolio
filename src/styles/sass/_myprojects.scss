@@ -1,0 +1,78 @@
+@mixin media($width) {
+    .myProject_div .single_card{
+        width: $width;
+    }
+}
+
+.myProject_div{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 1rem 0 1rem 0;
+    background-color: $white;
+    .single_card{
+        width: 40%;
+        margin: 2.5rem auto;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.37), 0px 10px 20px 10px rgba(0, 0, 0, 0.1);
+        .img_div{
+            width: 100%;
+            height: 45vh;
+            img{
+                width: 100%;
+                height: 100%;
+            }  
+        }
+        .title{
+            font-size: 1.5rem;
+            padding: .3rem;
+        }
+        .desc{
+            padding: .3rem;
+            button{
+                background: transparent;
+                outline: none;
+                border: none;
+                color: rgba(134, 56, 212, 0.637);
+                text-shadow: 0 1px 1px black;
+                font-size: .8rem;
+                cursor: pointer;
+                text-decoration: underline;
+            }
+        }
+        .btns_div{
+            margin-top: 1rem;
+            padding: .1rem;
+            display: flex;
+            justify-content: space-between;
+            button{
+                padding: .3rem 1.5rem;
+                outline: none;
+                border: 1px solid black;
+                background-color: royalblue;
+                color: $white;
+                font-size: 1.1rem;
+                font-family: "Poppins";
+                letter-spacing: 1px;
+                cursor: pointer;
+            }
+        }
+        &:first-child{
+            margin-top: 0;
+        }
+    }
+}
+@media screen and (max-width:870px){
+    @include media(55%);
+}
+@media screen and (max-width:690px){
+    @include media(70%);
+}
+@media screen and (max-width:510px){
+    @include media(85%);
+}
+@media screen and (max-width:390px){
+    @include media(99%);
+}

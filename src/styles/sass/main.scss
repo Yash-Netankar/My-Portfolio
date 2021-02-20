@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior:smooth;
+}
+body{
+    font-size: 62.5%rem;
+    font-family: "Poppins";
+}
+@import "./var";
+@import "./nav";
+@import "./home";
+@import "./about";
+@import "./skills";
+@import "./timeline";
+@import "./work";
+@import "./projects";
+@import "./myprojects";
+@import "./footer";
+@import "./modal";
+
+
+// scrollbar
+::-webkit-scrollbar {
+    width: 5px;
+  } 
+  ::-webkit-scrollbar-track {
+    background: black;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to top, $yellow, $red);
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

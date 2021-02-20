@@ -1,0 +1,159 @@
+@mixin flex($justify, $direction) {
+    display: flex;
+    justify-content: $justify;
+    align-items: center;
+    flex-direction: $direction;
+}
+@mixin underLine_animation {
+    &::after{
+        content: "";
+        width: 0%;
+        height: 2px;
+        position: absolute;
+        left: 3px;
+        bottom: -2px;
+        background: $red;
+        transition: .3s;
+    }
+    &:hover::after{
+        width: 90%;
+    }
+}
+@mixin media($logo_size, $sidebar_width, $sec1, $sec2) {
+    nav .logo{font-size: $logo_size}
+    .navbar .link{display: none;}
+    .slider .slider_content{width: $sidebar_width;}
+    .slider .slider_content .sec-1{width: $sec1 !important;}
+}
+nav{
+    width: 100%;
+    padding: .7rem .5rem;
+    @include flex(space-between, row);
+    background: $black;
+    background: rgb(36,36,45);
+    z-index: 10;
+    .logo_link{
+        text-decoration: none;
+        color: $red;
+    }
+    .logo{
+        font-family: "Rubik";
+        font-weight: 600;
+        text-shadow: 1px 1px 5px black;
+        word-spacing: 3px;
+        letter-spacing: 2.5px;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        margin-right: .4rem;
+        span{
+            color: $white;
+        }
+    }
+    .navbar{
+        width: 25%;
+        @include flex(space-around, row);
+        .link{
+            color: $white;
+            text-decoration: none;
+            position: relative;
+            @include underLine_animation();
+        }
+        .hamburger{
+            border-radius: 5%;
+            color: $white;
+            background: $red;
+        }
+    }
+}
+.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.842);
+}
+
+.slider{
+    .slider_content{
+        @include flex(none, row);
+        width: 75vw;
+        height: 100%;
+        .sec-1{
+            padding: 1rem;
+            @include flex(none, column);
+            width: 35% !important;
+            height: 100vh;
+            border-right: 1px solid #333;
+           .logo_div{
+               width:100%;
+               border-bottom: 2px solid #333;
+               @include flex(space-between, row);
+               .name{
+                   color: $red;
+                   h1{
+                       font-size: 1.6rem;
+                       text-shadow: 0px 0px 2px black;
+                    }
+                    h4{
+                        font-size: .8rem;
+                        text-shadow: 0px 0px 2px black;
+                   }
+               }
+               .close_btn{
+                   cursor: pointer;
+               }
+           }
+           .links_div{
+               margin-top: 2rem;;
+               @include flex(none, column);
+               .Navlink{
+                    text-decoration: none;
+                    font-weight: 600;
+                    margin-top: 1rem;
+                    color: $black;
+                    position: relative;
+                    @include underLine_animation();
+                }
+           }
+        }
+        .sec-2{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            img{
+                width: 50%;
+                margin-top: 1rem;
+                box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.096);
+                border-radius: 4px;
+                border-right: 4px solid $red;
+            }
+            p{
+                width: 95%;
+                margin-top: 2rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:650px){
+    @include media(1rem, 95vw, 50%, 100%);
+    .sec-2{
+        img{
+            width: 90% !important;
+        }
+        p{
+            font-size: 1.1rem;
+        }
+    }
+}
+@media screen and (max-width:530px){
+    .sec-2{
+        p{
+            font-size: .9rem;
+        }
+    }
+}
+@media screen and (max-width:480px){
+    @include media(1rem, 100vw, 60%, 100%);
+}

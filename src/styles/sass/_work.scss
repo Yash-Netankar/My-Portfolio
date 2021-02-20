@@ -1,0 +1,88 @@
+[data-tab-content]{
+    display: none;
+}
+.active[data-tab-content]{
+    display: block;
+}
+.exp_container{
+    width: 100%;
+    min-height: 80vh;
+    padding: 2rem 1rem;
+    background: black;
+    position: relative;
+    >h1{
+        color: $red;
+        text-align: center;
+        letter-spacing: 1px;
+        word-spacing: 3px;
+        span{
+            color: $yellow;
+        }
+        .and{
+            color: $white;
+        }
+    }
+    .tab_container{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 3rem;
+        .tabs{
+            width: 100%;
+            list-style: none;
+            color: white;
+            padding: 1rem 2rem;
+            li{
+                cursor: pointer;
+                font-size: 1rem;
+                margin-bottom: 2rem;
+                padding: .5rem 1.5rem;
+                border-radius: 4px;
+                box-shadow: 0 0 4px 1px white;
+                background: $red;
+                text-align: center;
+            }
+        }
+        .tab_content{
+            width: 70%;
+            min-height: 25vh;
+            padding: 1rem 2rem;
+            border: 1px solid $red;
+            div{
+                h1{
+                    color: $white
+                }
+                p{
+                    margin-top: 1rem;
+                    color: $white;
+                    line-height: 1.8rem;
+                    word-spacing: 3px;
+                }
+                .modal_btn{
+                    margin-top: 1rem;
+                    color: $black;
+                    background-color: $yellow;
+                    padding: .3rem 1.5rem;
+                    font-weight: 600;
+                    box-shadow: 0 0 5px 1px $white;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:710px){
+    .tab_container{
+        flex-direction: column;
+    }
+    .tabs{
+        width: 100%;
+        li{
+            display: inline-block;
+            margin-right: 1rem;
+        }
+    }
+    .tab_container .tab_content{
+        width: 100% !important;
+    }
+}
