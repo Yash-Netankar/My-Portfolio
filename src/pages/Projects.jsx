@@ -5,6 +5,7 @@ import react_logo from "../styles/images/react_logo.png";
 import fullStack from "../styles/images/full stack.png";
 import node from "../styles/images/node.png";
 import js from "../styles/images/js.png";
+import php from "../styles/images/phplogo.png";
 
 const Projects = () => {
 
@@ -20,6 +21,7 @@ const Projects = () => {
                 <Card img={react_logo} title="React Js" desc="React.js Projects" no={5} />
                 <Card img={node} title="Node Js" desc="Node.js Projects" no={2} />
                 <Card img={js} title="Vanilla Js" desc="Vanilla.js Projects" no={13} />
+                <Card img={php} title="PHP Mysql" desc="PHP & Mysql Projects" no={7} />
             </div>
         </>
     )
