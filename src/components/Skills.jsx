@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Skills = () => {
-    let skills = ["React", "Node + Express", "MongoDB & MySql", "Vanilla JS", "PHP", "HTML & CSS + SASS"];
+    let skills = ["React + Redux", "Node + Express", "MongoDB & MySql", "Vanilla JS", "PHP", "HTML & CSS + SASS"];
     let skillProgress = [75, 70, 65, 80, 45, 85];
     let tools = ["Git+GitHub", "FireBase", "Contentful", "VS Code", "Heroku+Netlify"];
     let toolsProgress = [70, 60, 40, 75, 65];
