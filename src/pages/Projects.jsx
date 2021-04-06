@@ -18,7 +18,7 @@ const Projects = () => {
             </h4>
             <div className="projects_div">
                 <Card img={fullStack} title="Full Stack" desc="Full Stack Web-Apps" no={3} />
-                <Card img={react_logo} title="React Js" desc="React.js Projects" no={5} />
+                <Card img={react_logo} title="React Js" desc="React.js Projects" no={7} />
                 <Card img={node} title="Node Js" desc="Node.js Projects" no={2} />
                 <Card img={js} title="Vanilla Js" desc="Vanilla.js Projects" no={13} />
                 <Card img={php} title="PHP Mysql" desc="PHP & Mysql Projects" no={7} />
