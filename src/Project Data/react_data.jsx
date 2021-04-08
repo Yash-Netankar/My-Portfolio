@@ -31,8 +31,8 @@ let arr = [
         title: "PhoneBook (Redux)",
         desc: "A Web-app where you will get a UI of My-Contacts like application in your smartphone and you can create, update ,delete and search created contacts. This whole web-app is build on the base of Redux and React for UI.",
         img: "/Project Images/react/PhoneBook.jpg",
-        isHosted: false,
-        link: "https://food-delivery-7f8c0.web.app/",
+        isHosted: true,
+        link: "https://yash-github-007.github.io/PhoneBook/",
         git: "https://github.com/Yash-Netankar/ReactJS-Projects/tree/master/Phonebook%20(Redux)"
     },
     {
@@ -56,7 +56,8 @@ let arr = [
         title: "Todo List (Redux)",
         desc: "Todo list where you can create your tasks and delete them after completion.",
         img: "/Project Images/react/TodoList.jpg",
-        isHosted: false,
+        isHosted: true,
+        link: "https://yash-github-007.github.io/List-app/",
         git: "https://github.com/Yash-Netankar/ReactJS-Projects/tree/master/Todo-List%20(Redux)"
     },
 ]
